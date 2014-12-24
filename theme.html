@@ -109,7 +109,7 @@
             </li>
           </ul>
           <ul>
-            <li>{{ theme.social.like }}</li>
+            {% if theme.social.like %}<li>{{ theme.social.like }}</li>{% endif %}
             {% if theme.social.follow %}<li>{{ theme.social.follow }}</li>{% endif %}
             {% if theme.social.share %}<li>{{ theme.social.share }}</li>{% endif %}
           </ul>
@@ -191,7 +191,7 @@
             </p>
           </a>
           <ul class="post-options">
-            <li>{{ theme.social.share }}</li>
+            <li>{{ theme.social.share }}Test</li>
             <li>{{ theme.social.follow }}</li>
             <li>{{ theme.social.like }}</li>
           </ul>
