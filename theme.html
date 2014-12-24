@@ -32,6 +32,11 @@
     })();
     </script>
     {% endif %}
+    
+    <!-- top banner -->
+    {% if is_home %}
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549b006c701ac3ce" async="async"></script>
+    {% endif %}
       
   </head>
   <body{% if is_post or is_tag or is_page %} class="short-header"{% endif %}>
@@ -267,11 +272,6 @@
       
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
       <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549b006c701ac3ce" async="async"></script>
-      
-      <!-- top banner -->
-      {% if is_home %}
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-549b006c701ac3ce" async="async"></script>
-      {% endif %}
 
   </body>
 </html>
