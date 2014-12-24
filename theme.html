@@ -62,7 +62,22 @@
     </header>
 
     <div class="container content">
-
+        
+        <!-- google search -->
+        <script>
+  (function() {
+    var cx = '014911372353438200974:7emb1xurpbk';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+        
       <div class="bio">
         <a class="user-avatar">
           <img src="{{ site.avatar }}" />
