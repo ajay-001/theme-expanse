@@ -62,4 +62,7 @@ $(document).ready(function(){
       }
   });  
     
+    //sharing plugin
+    new Share(".share-button");
+    
 });
