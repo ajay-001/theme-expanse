@@ -5,8 +5,8 @@
     <title>
       {% if is_login %}Login
       {% elif is_home %}{{ site.author }}
+      {% elif is_tag %}{{ tag }}
       {% elif post %}{{ post.title }}
-        {% elif is_tag %}{{ tag }}
       {% endif %}
       | {{ site.name }}
     </title>
@@ -14,7 +14,7 @@
     {{ header_meta }}
       
     <!-- favicon -->
-    <link rel="shortcut icon" href="http://ajaysuresh.com/assets/ajay.ico">
+    <link rel="shortcut icon" href="http://code.ajaysuresh.com/assets/ajay.ico">
       
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="{{ assets('css/style.css') }}">
